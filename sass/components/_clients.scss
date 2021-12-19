@@ -1,25 +1,39 @@
 .clients {
   &__list {
     display: flex;
+    margin: -15px;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
+    margin: 15px;
+    @media screen and (max-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 12 * 15px) / 6);
+    }
+
     display: flex;
     justify-content: center;
     height: 92px;
-    width: 170px;
-
     border: 1px solid $icons-color;
     box-sizing: border-box;
     border-radius: 4px;
     fill: $icons-color;
-
     transition: fill getTransition('time-transit') getTransition('distribution-function'),
       border-color getTransition('time-transit') getTransition('distribution-function');
-  }
-
-  &__link:not(:last-child) {
-    margin-right: 30px;
   }
 
   &__icon {

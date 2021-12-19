@@ -18,12 +18,16 @@ body {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1170px;
+    width: 1200px;
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section--gray {

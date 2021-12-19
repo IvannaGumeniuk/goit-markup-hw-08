@@ -1,15 +1,12 @@
 .work {
-  padding-top: 0;
-
-  &__header {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $title-color;
+  @media screen and (max-width: 11990px) {
+    display: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  padding-top: 0;
 
   &__list {
     display: flex;

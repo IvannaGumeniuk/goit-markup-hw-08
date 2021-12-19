@@ -4,17 +4,34 @@
   background-color: $footer-bg-color;
 
   &__container {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+
     justify-content: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   &__contacts {
-    margin-right: 70px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      text-align: left;
+    }
   }
 
   &__address {
+    text-align: center;
     margin-top: 20px;
     font-style: normal;
     font-size: 14px;
@@ -24,7 +41,10 @@
   }
 
   &__item {
-    display: flex;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__item:first-child {
@@ -47,8 +67,15 @@
   }
 
   &__title {
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+
     margin-bottom: 20px;
-    margin-top: 7px;
+
+    @media screen and (max-width: 1190px) {
+      text-align: center;
+    }
 
     font-style: normal;
     font-weight: 700;

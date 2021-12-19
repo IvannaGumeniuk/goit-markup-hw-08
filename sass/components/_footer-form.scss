@@ -1,11 +1,23 @@
 .footer-form {
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 93px;
+    margin-top: 0;
+  }
 
   &__input {
-    width: 358px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 358px;
+      margin-right: 12px;
+    }
+
     height: 50px;
-    margin-right: 12px;
     padding: 15px 16px;
     border: $footer-form-border;
     box-sizing: border-box;
@@ -24,8 +36,13 @@
     cursor: pointer;
   }
   &__btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin-top: 35px;
+    }
     height: 50px;
-    margin-top: 42px;
     padding: 0;
   }
 
