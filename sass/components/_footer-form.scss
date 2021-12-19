@@ -1,0 +1,35 @@
+.footer-form {
+  display: flex;
+  margin-left: 93px;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    border: $footer-form-border;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    outline: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $footer-input-color;
+    cursor: pointer;
+  }
+  &__btn {
+    height: 50px;
+    margin-top: 42px;
+    padding: 0;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}

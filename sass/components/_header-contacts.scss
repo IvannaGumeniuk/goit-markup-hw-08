@@ -1,0 +1,43 @@
+.header-contacts {
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    transition: color getTransition('time-transit') getTransition('distribution-function');
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__item {
+    display: flex;
+    cursor: pointer;
+    transition: color getTransition('time-transit') getTransition('distribution-function');
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

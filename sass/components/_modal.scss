@@ -1,0 +1,56 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $backdrop-color;
+  opacity: 1;
+
+  transition: opacity getTransition('time-transit') getTransition('distribution-function');
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 581px;
+  width: 528px;
+  background-color: $modal-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform getTransition('time-transit') getTransition('distribution-function');
+
+  &__btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $close-btn-color;
+    border: $close-btn-border;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    fill: currentColor;
+    transition: fill getTransition('time-transit') getTransition('distribution-function');
+
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+    }
+  }
+}

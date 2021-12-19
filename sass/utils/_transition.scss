@@ -1,0 +1,8 @@
+$transition: (
+  'time-transit': 250ms,
+  'distribution-function': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getTransition($key) {
+  @return map-get($transition, $key);
+}

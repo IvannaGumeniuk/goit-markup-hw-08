@@ -1,0 +1,27 @@
+$colors: (
+  'main-bg-color': #ffffff,
+  'main-color': #212121,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__text--blue {
+    color: $color-accent;
+  }
+
+  &__text--black {
+    color: getColor('main-color');
+  }
+  &__text--white {
+    color: getColor('main-bg-color');
+  }
+}
