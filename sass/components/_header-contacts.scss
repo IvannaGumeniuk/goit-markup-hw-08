@@ -1,10 +1,15 @@
 .header-contacts {
   &__link {
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+
     letter-spacing: 0.02em;
     color: $main-text-color;
     transition: color getTransition('time-transit') getTransition('distribution-function');
@@ -13,13 +18,23 @@
     &:focus {
       color: $color-accent;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    margin-left: 84px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
   }
 
   &__item {
@@ -30,14 +45,25 @@
     &:focus {
       color: $color-accent;
     }
-
-    &:first-child {
-      margin-right: 50px;
+    @media screen and (min-width: 768px) {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:first-child {
+        margin-right: 50px;
+        margin-bottom: 0;
+      }
     }
   }
 
   &__icon {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 }

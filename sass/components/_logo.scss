@@ -8,10 +8,16 @@ $colors: (
 }
 
 .logo {
+  display: inline-block;
+  padding: 16px 0;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
   letter-spacing: 0.03em;
 
   &__text--blue {
@@ -23,5 +29,17 @@ $colors: (
   }
   &__text--white {
     color: getColor('main-bg-color');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 26px 0;
+  }
+}
+
+.footer__logo {
+  @media screen and (min-width: 768px) {
+    padding: 0;
   }
 }
