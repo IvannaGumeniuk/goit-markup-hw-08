@@ -83,8 +83,10 @@
       padding: 63px 24px;
     }
 
-    // padding: 63px 24px;
     font-weight: 400;
+    @media screen and (max-width: 320px) {
+      font-size: 17px;
+    }
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;

@@ -276,6 +276,7 @@ ul {
 img {
   display: block;
   height: auto;
+  max-width: 100%;
 }
 
 .list {
@@ -1628,6 +1629,12 @@ body {
 @media screen and (min-width: 1200px) {
   .product__text {
     padding: 63px 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .product__text {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=main.css.map */
