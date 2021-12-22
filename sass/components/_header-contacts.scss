@@ -25,7 +25,7 @@
   }
 
   &__list {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
     margin-left: 84px;
@@ -45,7 +45,7 @@
     &:focus {
       color: $color-accent;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       &:first-child {
         margin-bottom: 10px;
       }
