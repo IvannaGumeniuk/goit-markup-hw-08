@@ -83,12 +83,12 @@
   }
 
   &__link--tel {
-    @media (max-width: 479px) {
-      font-size: 24px;
-    }
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
+    @media (min-width: 479px) {
+      font-size: 34px;
+    }
     line-height: 1.18px;
     letter-spacing: 0.02em;
     color: $color-accent;

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
+    
     <title>Студия</title>
 </head>
 <body>
@@ -111,19 +113,53 @@
             <div class="container">
                 <h2 class="team__header">Чем мы занимаемся</h2>
                     <ul class="work__list list">
-                        <li class="work__item"><img src="./images/box1.jpg" alt="мы создаем сайт" width="370" height="294">
+                        <li class="work__item">
+                            <picture>
+                                <source srcset="
+                                ./images/advantages/box1.jpg 1x,
+                                ./images/advantages/box1-x2.jpg 2x"
+
+                                media="(min-width: 1200px)"
+                                >
+                                <img src="./images/advantages/box1.jpg" alt="мы создаем сайт">
+                            </picture>
+                            <!-- <img src="./images/advantages/box.jpg" alt="мы создаем сайт" width="370" height="294"> -->
                             <p class="work__text">
                                 Десктопные приложения
                             </p>
                         </li>
 
-                        <li class="work__item"><img src="./images/box2.jpg" alt="мы создаем макет для сайта" width="370" height="294">
+                        <li class="work__item">
+
+
+                            <picture>
+                                <source srcset="
+                                ./images/advantages/box2.jpg 1x,
+                                ./images/advantages/box2-x2.jpg 2x"
+
+                                media="(min-width: 1200px)"
+                                >
+                                                            
+                                <img src="./images/advantages/box2.jpg" alt="мы создаем макет для сайта">
+                            </picture>
+                            
+                            <!-- <img src="./images/box2.jpg" alt="мы создаем макет для сайта" width="370" height="294"> -->
                             <p class="work__text">
                                 Мобильные приложения
                             </p>
                         </li>
 
-                        <li class="work__item"><img src="./images/box3.jpg" alt="мы подбираем цвета для сайта" width="370" height="294">
+                        <li class="work__item">
+                            <picture>
+                                <source srcset="
+                                ./images/advantages/box3.jpg 1x,
+                                ./images/advantages/box3-x2.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <img src="./images/advantages/box3.jpg" alt="мы подбираем цвета для сайта">
+                            </picture>
+                            
+                            <!-- <img src="./images/box3.jpg" alt="мы подбираем цвета для сайта" width="370" height="294"> -->
                             <p class="work__text">
                                 Дизайнерские решения
                             </p>
@@ -138,7 +174,26 @@
                 <h2 class="team__header">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img src="./images/igor_demyanenko.jpg" alt="Игорь Демьяненко - product designer" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                ./images/team/igor_demyanenko.jpg 1x,
+                                ./images/team/igor_demyanenko-x2.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="
+                                ./images/team/igor_demyanenko-768.jpg 1x,
+                                ./images/team/igor_demyanenko-768-x2.jpg 2x" 
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="
+                                ./images/team/igor_demyanenko-480.jpg 1x,
+                                ./images/team/igor_demyanenko-480-x2.jpg 2x" 
+                                media="(min-width: 480px)">
+                        
+                            <img src="./images/team/igor_demyanenko.jpg" alt="Игорь Демьяненко - product designer" >
+                        </picture>
+
+                        <!-- <img src="./images/igor_demyanenko.jpg" alt="Игорь Демьяненко - product designer" width="270" height="260"> -->
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__label">Product Designer</p>
                         <ul class="social__list list">
@@ -178,7 +233,27 @@
 
                     </li>
                     <li class="team__item">
-                        <img src="./images/olga_repina.jpg" alt="Ольга Репина - frontend developer" width="270" height="260">
+                         
+                        <picture>
+                            <source srcset="
+                                ./images/team/olga_repina.jpg 1x,
+                                ./images/team/olga_repina-x2.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="
+                                ./images/team/olga_repina-768.jpg 1x,
+                                ./images/team/olga_repina-768-x2.jpg 2x" 
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="
+                                ./images/team/olga_repina-480.jpg 1x,
+                                ./images/team/olga_repina-480-x2.jpg 2x" 
+                                media="(min-width: 320px)">
+                        
+                            <img src="./images/team/olga_repina.jpg" alt="Ольга Репина - frontend developer">
+                        </picture>
+
+                        <!-- <img src="./images/team/olga_repina.jpg" alt="Ольга Репина - frontend developer" width="270" height="260"> -->
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__label">Frontend Developer</p>
                         <ul class="social__list list">
@@ -217,7 +292,26 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/nikolay_tarasov.jpg" alt="Николай Тарасов - marketing" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                ./images/team/nikolay_tarasov.jpg 1x,
+                                ./images/team/nikolay_tarasov-x2.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="
+                                ./images/team/nikolay_tarasov-768.jpg 1x,
+                                ./images/team/nikolay_tarasov-768-x2.jpg 2x" 
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="
+                                ./images/team/nikolay_tarasov-480.jpg 1x,
+                                ./images/team/nikolay_tarasov-480-x2.jpg 2x" 
+                                media="(min-width: 320px)">
+                        
+                            <img src="./images/team/nikolay_tarasov.jpg" alt="Николай Тарасов - marketing">
+                        </picture>
+
+                        <!-- <img src="./images/team/nikolay_tarasov.jpg" alt="Николай Тарасов - marketing" width="270" height="260"> -->
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p class="team__label">Marketing</p>
                         <ul class="social__list list">
@@ -256,7 +350,27 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/mikhail_ermakov.jpg" alt="Михаил Ермаков - ui designer" width="270" height="260">
+
+                        <picture>
+                            <source srcset="
+                                ./images/team/mikhail_ermakov.jpg 1x,
+                                ./images/team/mikhail_ermakov-x2.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="
+                                ./images/team/mikhail_ermakov-768.jpg 1x,
+                                ./images/team/mikhail_ermakov-768-x2.jpg 2x" 
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="
+                                ./images/team/mikhail_ermakov-480.jpg 1x,
+                                ./images/team/mikhail_ermakov-480-x2.jpg 2x" 
+                                media="(min-width: 320px)">
+                        
+                            <img src="./images/team/mikhail_ermakov.jpg" alt="Михаил Ермаков - ui designer">
+                        </picture>
+
+                        <!-- <img src="./images/team/mikhail_ermakov.jpg" alt="Михаил Ермаков - ui designer" width="270" height="260"> -->
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p class="team__label">UI Designer</p>
                         <ul class="social__list list">
@@ -331,6 +445,7 @@
                         <svg class="clients__icon" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-group-3"></use>
                         </svg>
+                        </a>
 
                     <a class="clients__link" href="">
                         <svg class="clients__icon" width="106" height="60">
@@ -441,7 +556,7 @@
                 </label>
 
                 <label class="hero-form__label">Почта
-                    <input type="emeil"class="hero-form__input" name="emeil" />
+                    <input type="email" class="hero-form__input" name="email" />
                     <svg class="hero-form__icon" width="15" height="12">
                         <use href="./images/symbol-defs.svg#icon-email-black"></use>
                     </svg>
@@ -477,13 +592,13 @@
         </button>
     
         <ul class="mobile-menu list">
-            <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--active link">Студия</a></li>
-            <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link mobile-menu__link--active link">Студия</a></li>
+            <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
             <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакты</a></li>
         </ul>
 
         <ul class="mobile-contacts list">
-            <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--tel link" href="tel:"+380961111111">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--email link" href="mailto:info@example.com">info@devstudio.com</a></li>
         </ul>
 

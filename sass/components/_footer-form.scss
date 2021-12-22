@@ -10,11 +10,19 @@
     margin-top: 0;
   }
 
+  &__title {
+    @media screen and (max-width: 1190px) {
+      text-align: center;
+    }
+  }
+
   &__input {
     width: 100%;
+
     @media screen and (min-width: 768px) {
       width: 358px;
       margin-right: 12px;
+      margin-top: 20px;
     }
 
     height: 50px;
